@@ -26,8 +26,10 @@ function App() {
       <main>
         <nav className={`${s.menu} ${!isTop ? s.shrink : ""}`}>
           <div className={s.opcaoMenu}>
-            <img height={60} width={s.auto} src={tresLinhas}/>
-            <img height={95} width={s.auto} src={menuLOGO}/>
+            <div className={s.imgOM}>
+              <img className={s.Tlinha} height={40} width={s.auto} src={tresLinhas}/>
+              <img height={60} width={s.auto} src={menuLOGO}/>
+            </div>
           </div>
 
           <div className={s.botaoContainer}>
@@ -50,3 +52,4 @@ function App() {
 }
 
 export default App
+
